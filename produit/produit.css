@@ -1,0 +1,60 @@
+*, *::before, *::after {
+    box-sizing: border-box ;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url("calculator-background.jpg");
+}
+
+.calculator {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ }
+
+.container{
+border-radius: 28px;
+padding: 16px;
+display: grid;
+grid-template-columns: repeat(4, 100px);
+ grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+button {
+    cursor: pointer;
+    font-size: 3rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.two-spaces {
+    grid-column: span 2;
+}
+
+.previous-number, .current-number {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+input {
+    grid-column: span 4;
+    height: auto;
+    width: auto;
+    border: none;
+    background-color:  rgba(0, 0, 0, 0.75);
+    text-align: end;
+    padding: 40px;
+    font-size: 40px;
+    color: white;
+}

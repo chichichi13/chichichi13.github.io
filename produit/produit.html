@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link href="produit.css" rel="stylesheet"> 
+    <script src="produit.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="container">
+            <input type="text" id="inputtext" placeholder="0">
+            <button class="two-spaces" onclick="clr()">C</button>
+            <button onclick="del()">DEl</button>
+            <button onclick="pressing('/')">/</button>
+            <button onclick="pressing(1)">1</button>
+            <button onclick="pressing(2)">2</button>
+            <button onclick="pressing(3)">3</button>
+            <button onclick="pressing('*')">*</button>
+            <button onclick="pressing(4)">4</button>
+            <button onclick="pressing(5)">5</button>
+            <button onclick="pressing(6)">6</button>
+            <button onclick="pressing('+')">+</button>
+            <button onclick="pressing(7)">7</button>
+            <button onclick="pressing(8)">8</button>
+            <button onclick="pressing(9)">9</button>
+            <button onclick="pressing('-')">-</button>
+            <button onclick="pressing('.')">.</button>
+            <button onclick="pressing(0)">0</button>
+            <button onclick="answer()" class="two-spaces">=</button> 
+        </div>
+    </div>
+</body>
+</html>
